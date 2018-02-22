@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,qBAAqB;EACnB,OAAO,EAAE,IAAI;EAEb,gDAA4B;IAC1B,QAAQ,EAAE,IAAI;;AAIlB,0BAA0B;EACxB,qBAAqB,EAAE,qCAAqC;EAE5D,8BAAG;IACD,KAAK,EAAE,IAAI;;AAIf,2BAA2B;EACzB,cAAc,EAAE,IAAI;EAEpB,+BAAG;IACD,cAAc,EAAE,MAAM",
+"sources": ["mg.sass"],
+"names": [],
+"file": "mg.css"
+}

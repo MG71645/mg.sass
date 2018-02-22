@@ -1,16 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9edcf98e-460d-45e2-9e46-e5f2601cb4e1" name="Default" comment="Added mg.sass">
-      <change beforePath="" afterPath="$PROJECT_DIR$/mg.sass" />
+    <list default="true" id="9edcf98e-460d-45e2-9e46-e5f2601cb4e1" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change beforePath="$PROJECT_DIR$/reset.css" afterPath="$PROJECT_DIR$/reset.css" />
-      <change beforePath="$PROJECT_DIR$/reset.css.map" afterPath="$PROJECT_DIR$/reset.css.map" />
-      <change beforePath="$PROJECT_DIR$/reset.sass" afterPath="$PROJECT_DIR$/reset.sass" />
-      <change beforePath="$PROJECT_DIR$/typography.css" afterPath="$PROJECT_DIR$/typography.css" />
-      <change beforePath="$PROJECT_DIR$/typography.css.map" afterPath="$PROJECT_DIR$/typography.css.map" />
-      <change beforePath="$PROJECT_DIR$/typography.sass" afterPath="$PROJECT_DIR$/typography.sass" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -48,7 +40,7 @@
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="342">
-              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+              <caret line="31" column="27" lean-forward="true" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -165,12 +157,20 @@
       <updated>1519070376176</updated>
       <workItem from="1519070377479" duration="8749000" />
       <workItem from="1519214101796" duration="299000" />
-      <workItem from="1519329968853" duration="6207000" />
+      <workItem from="1519329968853" duration="6231000" />
     </task>
+    <task id="LOCAL-00001" summary="Added mg.sass">
+      <created>1519339250068</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1519339250068</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15255000" />
+    <option name="totallyTimeSpent" value="15279000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -287,7 +287,7 @@
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <caret line="31" column="27" lean-forward="true" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
           <folding />
         </state>
       </provider>
