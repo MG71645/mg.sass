@@ -24,6 +24,13 @@ $percents: 10% 20% 25% 50% 100%
   
   &[data-child-spacing] > *
     margin: 0
+  
+  
+  
+@for $i from 2 through 12
+  @for $j from 1 through $i
+    [data-width~="#{$j}/#{$i}"]
+      width: ($j / $i) * 100%
     
     
     
