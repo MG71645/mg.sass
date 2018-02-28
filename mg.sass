@@ -40,6 +40,20 @@ $percents: 10% 20% 25% 50% 100%
   > *
     width: 100%
     
+  
+  
+@each $value in $values
+  [data-padding~="#{$value}"]
+    padding: #{$value}px
+    
+  [data-padding~="#{$value}y"]
+    padding-top: #{$value}px
+    padding-bottom: #{$value}px
+    
+  [data-padding~="#{$value}x"]
+    padding-left: #{$value}px
+    padding-right: #{$value}px
+    
     
     
 @each $device, $size in $sizes

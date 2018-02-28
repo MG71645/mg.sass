@@ -250,6 +250,72 @@
   [data-child-width="200px"] > * {
     width: 100%; }
 
+[data-padding~="4"] {
+  padding: 4px; }
+
+[data-padding~="4y"] {
+  padding-top: 4px;
+  padding-bottom: 4px; }
+
+[data-padding~="4x"] {
+  padding-left: 4px;
+  padding-right: 4px; }
+
+[data-padding~="8"] {
+  padding: 8px; }
+
+[data-padding~="8y"] {
+  padding-top: 8px;
+  padding-bottom: 8px; }
+
+[data-padding~="8x"] {
+  padding-left: 8px;
+  padding-right: 8px; }
+
+[data-padding~="12"] {
+  padding: 12px; }
+
+[data-padding~="12y"] {
+  padding-top: 12px;
+  padding-bottom: 12px; }
+
+[data-padding~="12x"] {
+  padding-left: 12px;
+  padding-right: 12px; }
+
+[data-padding~="16"] {
+  padding: 16px; }
+
+[data-padding~="16y"] {
+  padding-top: 16px;
+  padding-bottom: 16px; }
+
+[data-padding~="16x"] {
+  padding-left: 16px;
+  padding-right: 16px; }
+
+[data-padding~="24"] {
+  padding: 24px; }
+
+[data-padding~="24y"] {
+  padding-top: 24px;
+  padding-bottom: 24px; }
+
+[data-padding~="24x"] {
+  padding-left: 24px;
+  padding-right: 24px; }
+
+[data-padding~="32"] {
+  padding: 32px; }
+
+[data-padding~="32y"] {
+  padding-top: 32px;
+  padding-bottom: 32px; }
+
+[data-padding~="32x"] {
+  padding-left: 32px;
+  padding-right: 32px; }
+
 @media (min-width: 320px) {
   [data-child-spacing~="xs:4px"] {
     margin: -2px;
