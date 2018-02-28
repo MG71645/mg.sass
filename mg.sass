@@ -1,9 +1,24 @@
+$values: 4 8 12 16 24 32
+$sizes: (xs: 320, sm: 578, md: 992, lg: 1200, xl: 1600)
+$percents: 10% 20% 25% 50% 100%
+
+
+
+*
+  box-sizing: border-box
+
+[data-child-width]
+  display: flex
+  flex-wrap: wrap
+
+  
+  
 [data-display="grid"]
   display: grid
-
-  &[data-child-spacing="16px"]
-    grid-gap: 16px
-
+  
+  &[data-child-spacing] > *
+    margin: 0
+    
     
     
 [data-child-width="200px"]
@@ -14,8 +29,30 @@
     
     
     
-[data-child-spacing="32px"]
-  letter-spacing: 32px
+@each $device, $size in $sizes
+  @each $value in $values
+    @media (min-width: #{$size}px)
+      [data-child-spacing~="#{$device}:#{$value}px"]
+        margin: -#{$value / 2}px
+        width: calc(100% + #{$value}px)
+        
+        > *
+          padding: #{$value / 2}px
   
-  > *
-    letter-spacing: normal
+      [data-child-width~="#{$device}:half"]
+        > *
+          width: 50%
+  
+      [data-child-width~="#{$device}:full"]
+        > *
+          width: 100%
+          
+      @for $i from 2 through 12
+        [data-child-width~="#{$device}:1/#{$i}"]
+          > *
+            width: (1 / $i) * 100%
+            
+      @each $percent in $percents
+        [data-child-width~="#{$device}:#{$percent}"]
+          > *
+            width: $percent
