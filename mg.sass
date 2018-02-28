@@ -66,12 +66,20 @@ $percents: 10% 20% 25% 50% 100%
   
 [data-align-horizontal~="right"]
   justify-content: flex-end
+  
+  
+  
+[data-order~="start"]
+  order: -1
+  
+[data-order~="end"]
+  order: 1
     
     
     
 @each $device, $size in $sizes
-  @each $value in $values
-    @media (min-width: #{$size}px)
+  @media (min-width: #{$size}px)
+    @each $value in $values
       [data-child-spacing~="#{$device}:#{$value}px"]
         margin: -#{$value / 2}px
         width: calc(100% + #{$value}px)
@@ -79,24 +87,36 @@ $percents: 10% 20% 25% 50% 100%
         > *
           padding: #{$value / 2}px
   
-      [data-child-width~="#{$device}:half"]
-        > *
-          width: 50%
+    [data-width~="#{$device}:half"]
+      width: 50%
+
+    [data-width~="#{$device}:full"]
+      width: 100%
   
-      [data-child-width~="#{$device}:full"]
-        > *
-          width: 100%
+    [data-child-width~="#{$device}:half"]
+      > *
+        width: 50%
+
+    [data-child-width~="#{$device}:full"]
+      > *
+        width: 100%
+        
+    @for $i from 2 through 12
+      @for $j from 1 through $i
+        [data-width~="#{$device}:#{$j}/#{$i}"]
+          width: ($j / $i) * 100%
           
-      @for $i from 2 through 12
-        [data-child-width~="#{$device}:1/#{$i}"]
-          > *
-            width: (1 / $i) * 100%
-            
-        @for $j from 1 through $i
-          [data-width~="#{$device}:#{$j}/#{$i}"]
-            width: ($j / $i) * 100%
-            
-      @each $percent in $percents
-        [data-child-width~="#{$device}:#{$percent}"]
-          > *
-            width: $percent
+      [data-child-width~="#{$device}:1/#{$i}"]
+        > *
+          width: (1 / $i) * 100%
+          
+    @each $percent in $percents
+      [data-child-width~="#{$device}:#{$percent}"]
+        > *
+          width: $percent
+          
+    [data-order~="#{$device}:start"]
+      order: -1
+      
+    [data-order~="#{$device}:end"]
+      order: 1
