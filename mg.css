@@ -316,6 +316,24 @@
   padding-left: 32px;
   padding-right: 32px; }
 
+[data-align-vertical~="top"] {
+  align-items: flex-start; }
+
+[data-align-vertical~="center"] {
+  align-items: center; }
+
+[data-align-vertical~="bottom"] {
+  align-items: flex-end; }
+
+[data-align-horizontal~="left"] {
+  justify-content: flex-start; }
+
+[data-align-horizontal~="center"] {
+  justify-content: center; }
+
+[data-align-horizontal~="right"] {
+  justify-content: flex-end; }
+
 @media (min-width: 320px) {
   [data-child-spacing~="xs:4px"] {
     margin: -2px;
